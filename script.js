@@ -40,25 +40,8 @@ navLinks.forEach(link => {
 
 // Download CV Button Functionality
 document.addEventListener('DOMContentLoaded', () => {
-    const downloadBtn = document.querySelector('.btn:not(.hire-me)');
     const hireMeBtns = document.querySelectorAll('.hire-me');
-    
-    // Download CV button
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            // You can replace this with your actual CV file path
-            const cvUrl = 'path/to/your/cv.pdf'; // Replace with your CV file
-            const link = document.createElement('a');
-            link.href = cvUrl;
-            link.download = 'Bidushi_Gautam_CV.pdf';
-            link.click();
-            
-            // If you don't have a CV file yet, show an alert
-            alert('CV download functionality - Replace the cvUrl with your actual CV file path');
-        });
-    }
-    
+
     // Hire Me buttons
     hireMeBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
