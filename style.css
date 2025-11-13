@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: 'poppins' sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -403,25 +404,29 @@ h3.my-profession{
     text-decoration: underline;
 }
 .home .home-img{
-  flex:0 0 flex;
-  max-width:40%;
+  flex:0 0 45%;
+  max-width:45%;
   text-align: center;
   position:relative;
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home-img {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .home .home-img img{
   margin:auto;
   border-radius: 50%;
-  height: 450px;
-  width: 450px;
+  max-width: 360px;
+  width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   display: block;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
 /*About*/
 .about .about-content{
@@ -794,6 +799,44 @@ h3.my-profession{
     .home .home-img {
         flex: 0 0 100%;
         max-width: 100%;
+        text-align: center;
+    }
+    .home .home-info {
+        order: 2;
+        margin-top: 30px;
+    }
+    .home .home-info p{
+        margin-bottom: 40px;
+    }
+    .home .home-img{
+        order: 1;
+        margin-top: 30px;
+    }
+    .section {
+        padding: 0 20px;
+    }
+    .section .container{
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }
+    h3.hello,
+    h3.my-profession {
+        font-size: 28px;
+    }
+    .about .about-content .personal-info,
+    .about .about-content .Skills {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about .about-content .personal-info .info-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .resume .resume-content,
+    .contact .contact-content,
+    .message .message-content {
+        padding-left: 0;
+        padding-right: 0;
     }
     
     .about .about-content .personal-info,
@@ -1025,5 +1068,115 @@ h3.my-profession{
 }
 
 
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  .main-content{
+    padding-left: 0;
+  }
+  .section {
+    padding: 0 16px;
+  }
+  .section .container{
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .section-title h1,
+  .section-title h2{
+    font-size: 30px;
+  }
+  .home .home-info p{
+    font-size: 18px;
+  }
+  .btn{
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  .social-links{
+    gap: 14px;
+  }
+  .about .about-content .Skills,
+  .about .about-content .personal-info{
+    margin-left: 0;
+  }
+  .resume .resume-content h3{
+    font-size: 20px;
+  }
+  .resume .resume-content p,
+  .contact .contact-item p{
+    font-size: 15px;
+  }
+  .contact .contact-item{
+    padding: 12px;
+  }
+  #message .contact-form{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .aside{
+    width: 230px;
+    padding: 30px 25px;
+  }
+  .aside .nav-toggler{
+    top: 18px;
+    left: 18px;
+    height: 40px;
+    width: 40px;
+  }
+  .aside .nav-toggler.open{
+    left: 250px;
+  }
+  .aside .logo{
+    top: 40px;
+    font-size: 26px;
+  }
+  .aside .nav li{
+    margin-bottom: 22px;
+  }
+  .home .home-info p{
+    font-size: 17px;
+  }
+  h3.hello,
+  h3.my-profession{
+    font-size: 24px;
+  }
+  .home .home-img img{
+    max-width: 260px;
+  }
+  .section .container{
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
+  .section-title h1,
+  .section-title h2{
+    font-size: 26px;
+  }
+  .about .about-content .personal-info .info-item{
+    padding-bottom: 12px;
+  }
+  .buttons .btn{
+    width: 100%;
+    text-align: center;
+  }
+  .resume .resume-content h3{
+    font-size: 18px;
+  }
+  .resume .resume-content p{
+    font-size: 14px;
+  }
+  .resume-item{
+    padding: 18px;
+  }
+  .contact .contact-item p{
+    font-size: 14px;
+  }
+  #message .contact-form{
+    padding: 1rem 0;
+  }
+}
 
 
