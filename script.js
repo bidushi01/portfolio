@@ -1,40 +1,52 @@
-// DOM Elements
-const navToggler = document.querySelector('.nav-toggler');
-const aside = document.querySelector('.aside');
-const navLinks = document.querySelectorAll('.nav li a');
-const sections = document.querySelectorAll('.section');
+let navToggler, aside, navLinks, sections;
 
-// Navigation Toggler
-navToggler.addEventListener('click', () => {
-    aside.classList.toggle('open');
-    navToggler.classList.toggle('open');
-});
-
-// Navigation Links
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        // Remove active class from all links
-        navLinks.forEach(navLink => navLink.classList.remove('active'));
-        
-        // Add active class to clicked link
-        link.classList.add('active');
-        
-        // Get the target section
-        const target = link.getAttribute('href').substring(1);
-        
-        // Hide all sections
-        sections.forEach(section => {
-            section.classList.add('hidden');
+// Initialize everything when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    // Get DOM elements
+    navToggler = document.querySelector('.nav-toggler');
+    aside = document.querySelector('.aside');
+    navLinks = document.querySelectorAll('.nav li a');
+    sections = document.querySelectorAll('.section');
+    
+    // Ensure all sections are visible on load
+    sections.forEach(section => {
+        section.classList.remove('hidden');
+    });
+    
+    // Navigation Toggler
+    if (navToggler) {
+        navToggler.addEventListener('click', () => {
+            aside.classList.toggle('open');
+            navToggler.classList.toggle('open');
         });
-        
-        // Show target section by id
-        const targetSection = document.getElementById(target);
-        if (targetSection) {
-            targetSection.classList.remove('hidden');
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
+    }
+    
+    // Navigation Links
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Remove active class from all links
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            
+            // Add active class to clicked link
+            link.classList.add('active');
+            
+            // Get the target section
+            const target = link.getAttribute('href').substring(1);
+            
+            // Scroll to the target section
+            const targetSection = document.getElementById(target);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            
+            // Close mobile nav if open
+            if (window.innerWidth <= 991) {
+                aside.classList.remove('open');
+                navToggler.classList.remove('open');
+            }
+        });
     });
 });
 
@@ -61,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Typing Animation for the profession text
 const typingElement = document.querySelector('.typing');
 if (typingElement) {
-    const professions = ['frontend developer', 'backend developer'];
+    const professions = ['Student', 'Web Developer'];
     let professionIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -99,12 +111,13 @@ if (typingElement) {
     setTimeout(typeWriter, 1000);
 }
 
-// Scroll-based navigation highlighting
+// Scroll-based navigation highlighting (only for visible sections)
 window.addEventListener('scroll', () => {
     let current = '';
-    const sections = document.querySelectorAll('.section');
+    const visibleSections = document.querySelectorAll('.section');
+    const allNavLinks = document.querySelectorAll('.nav li a');
     
-    sections.forEach(section => {
+    visibleSections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         
@@ -113,7 +126,12 @@ window.addEventListener('scroll', () => {
         }
     });
     
-    navLinks.forEach(link => {
+    if (!current && visibleSections.length) {
+        current = visibleSections[0].getAttribute('id');
+    }
+
+    // Update active state
+    allNavLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
