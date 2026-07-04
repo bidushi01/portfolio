@@ -1,6 +1,6 @@
 let navToggler, aside, navLinks, sections;
 
-// Initialize everything when DOM is ready
+
 document.addEventListener('DOMContentLoaded', () => {
     // Get DOM elements
     navToggler = document.querySelector('.nav-toggler');
@@ -8,12 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks = document.querySelectorAll('.nav li a');
     sections = document.querySelectorAll('.section');
     
-    // Ensure all sections are visible on load
+
     sections.forEach(section => {
         section.classList.remove('hidden');
     });
     
-    // Navigation Toggler
     if (navToggler) {
         navToggler.addEventListener('click', () => {
             aside.classList.toggle('open');
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Navigation Links
+    
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -50,11 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Download CV Button Functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const hireMeBtns = document.querySelectorAll('.hire-me');
 
-    // Hire Me buttons
     hireMeBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -70,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Typing Animation for the profession text
+
 const typingElement = document.querySelector('.typing');
 if (typingElement) {
     const professions = ['Student', 'Web Developer'];
@@ -111,7 +109,6 @@ if (typingElement) {
     setTimeout(typeWriter, 1000);
 }
 
-// Scroll-based navigation highlighting (only for visible sections)
 window.addEventListener('scroll', () => {
     let current = '';
     const visibleSections = document.querySelectorAll('.section');
@@ -139,7 +136,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Theme Switcher Functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const themeOptions = document.querySelectorAll('.theme-option');
     const body = document.body;
@@ -163,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadThemeCSS('color-1');
     }
     
-    // Theme option click handlers
+   
     themeOptions.forEach(option => {
         option.addEventListener('click', () => {
             const selectedTheme = option.getAttribute('data-theme');
@@ -185,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Function to load theme CSS files
+   
     function loadThemeCSS(theme) {
         // Remove existing theme CSS links
         const existingThemeCSS = document.querySelectorAll('link[href*="color-"]');
@@ -195,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        // Add new theme CSS
+      
         const themeCSS = document.createElement('link');
         themeCSS.rel = 'stylesheet';
         themeCSS.href = `${theme}.css`;
