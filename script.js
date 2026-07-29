@@ -1,7 +1,4 @@
-/**
- * Bidushi Gautam Portfolio — Main Script
- * Single init, Intersection Observer, organized modules
- */
+
 
 (function () {
     'use strict';
