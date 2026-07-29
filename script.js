@@ -1,5 +1,3 @@
-
-
 (function () {
     'use strict';
 
@@ -26,6 +24,7 @@
         initTypingAnimation();
         initScrollAnimations();
         initSkillBars();
+        initExternalLinks();
     }
 
     function cacheElements() {
@@ -206,6 +205,26 @@
         );
 
         DOM.skillItems.forEach(item => skillObserver.observe(item));
+    }
+
+    /* ---- External Links (fix malformed URLs on deploy) ---- */
+    function initExternalLinks() {
+        document.querySelectorAll('a[href]').forEach(link => {
+            const rawHref = link.getAttribute('href');
+            if (!rawHref) return;
+
+            // Fix broken patterns like "https:https://..." or "/https://..."
+            const embeddedUrl = rawHref.match(/https?:\/\/[^\s"'<>]+/i);
+            if (embeddedUrl && !rawHref.startsWith('http://') && !rawHref.startsWith('https://')) {
+                link.setAttribute('href', embeddedUrl[0]);
+            }
+        });
+
+        document.querySelectorAll('a.timeline-company').forEach(link => {
+            link.setAttribute('href', 'https://logitech.com.np/');
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
     }
 
     document.addEventListener('DOMContentLoaded', init);
