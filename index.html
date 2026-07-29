@@ -2,363 +2,514 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <title>Bidushi Gautam | CSIT Student & .NET Intern</title>
+    <meta name="description" content="Bidushi Gautam — Final-Year BSc CSIT student and .NET Development Intern seeking junior .NET, backend, and data analytics roles. Portfolio showcasing ASP.NET Core MVC, SQL Server, and backend projects. Based in Kathmandu, Nepal.">
+    <meta name="author" content="Bidushi Gautam">
+    <meta name="keywords" content="Bidushi Gautam, .NET Developer, Backend Developer, ASP.NET Core, SQL Server, Kathmandu, Nepal, CSIT">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bidushi Gautam | CSIT Student & .NET Intern">
+    <meta property="og:description" content="Final-Year BSc CSIT student and .NET Development Intern passionate about backend development, SQL, and data analytics. Open to junior developer and intern roles.">
+    <meta property="og:url" content="https://github.com/bidushi01">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Bidushi Gautam | CSIT Student & .NET Intern">
+    <meta name="twitter:description" content="Final-Year BSc CSIT student and .NET Development Intern. View my projects and experience.">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="skins/color-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!----main container start -->
-    <div class="main-container">
-    <!----Aside start -->
-    <div class="aside">
-        <div class="logo">
-            <a href="#"><span>B</span>idushi</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a href="#home" class="nav-logo" aria-label="Bidushi Gautam — Home">
+                <span class="nav-logo-mark">BG</span>
+                <span class="nav-logo-text">Bidushi</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu" role="list">
+                <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+                <i class="fa-solid fa-moon theme-icon-dark" aria-hidden="true"></i>
+                <i class="fa-solid fa-sun theme-icon-light" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="section hero" id="home" aria-labelledby="hero-heading">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-content fade-in">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 id="hero-heading" class="hero-name">Bidushi Gautam</h1>
+                    <p class="hero-role">
+                        I'm a <span class="typing" aria-live="polite" aria-atomic="true">Aspiring .NET Developer</span>
+                    </p>
+                    <p class="hero-summary">
+                        Final-year BSc CSIT student with hands-on .NET internship experience. Passionate about backend development, SQL, and data analytics — actively seeking opportunities to grow as a developer.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer" download="Bidushi_Gautam_Resume.pdf">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="https://github.com/bidushi01" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bidushi-gautam-64826a371/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:gautambidushi4@gmail.com" aria-label="Send email">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <div class="hero-image-ring">
+                        <img src="profile.jpg" alt="Bidushi Gautam — CSIT Student & .NET Intern" width="360" height="360" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <header class="section-header fade-in">
+                    <span class="section-tag">About Me</span>
+                    <h2 id="about-heading" class="section-title">Who I Am</h2>
+                </header>
+
+                <div class="about-grid">
+                    <article class="glass-card about-text fade-in">
+                        <p>
+                            I'm a <strong>final-year BSc CSIT student</strong> at New Summit College, Kathmandu, with hands-on experience as a <strong>.NET Development Intern</strong>. I specialize in backend development and enjoy building reliable, data-driven applications that solve real-world problems.
+                        </p>
+                        <p>
+                            Through my internship and academic projects, I've worked extensively with <strong>ASP.NET Core MVC</strong>, <strong>SQL Server</strong>, <strong>Entity Framework Core</strong>, and <strong>Dapper</strong>. I have a strong foundation in SQL and database design, and I'm currently expanding my skills in <strong>Data Analytics with Python</strong>.
+                        </p>
+                        <p>
+                            I'm actively seeking opportunities as a <strong>Junior .NET Developer</strong>, <strong>Backend Developer Intern</strong>, <strong>Data Analytics Intern</strong>, or <strong>QA Intern</strong> — roles where I can apply my internship experience, keep learning, and grow with a passionate engineering team.
+                        </p>
+                    </article>
+
+                    <aside class="glass-card about-info fade-in">
+                        <h3 class="about-info-title">Quick Info</h3>
+                        <dl class="info-list">
+                            <div class="info-item">
+                                <dt><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Education</dt>
+                                <dd>BSc CSIT — Final Year</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt><i class="fa-solid fa-building" aria-hidden="true"></i> College</dt>
+                                <dd>New Summit College, Kathmandu</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experience</dt>
+                                <dd>.NET Development Intern</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Location</dt>
+                                <dd>Kathmandu, Nepal</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</dt>
+                                <dd><a href="mailto:gautambidushi4@gmail.com">gautambidushi4@gmail.com</a></dd>
+                            </div>
+                            <div class="info-item">
+                                <dt><i class="fa-solid fa-language" aria-hidden="true"></i> Languages</dt>
+                                <dd>Nepali, English, Hindi</dd>
+                            </div>
+                        </dl>
+                        <div class="about-actions">
+                            <a href="resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" download="Bidushi_Gautam_Resume.pdf" aria-label="View and download resume PDF">
+                                <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="interests fade-in">
+                    <h3 class="interests-title">Career Interests</h3>
+                    <ul class="tag-list" role="list">
+                        <li class="tag">.NET Development</li>
+                        <li class="tag">Backend Development</li>
+                        <li class="tag">Data Analytics</li>
+                        <li class="tag">Quality Assurance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section skills" id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <header class="section-header fade-in">
+                    <span class="section-tag">Technical Skills</span>
+                    <h2 id="skills-heading" class="section-title">What I Know</h2>
+                </header>
+
+                <div class="skills-grid">
+                    <article class="glass-card skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-item" data-level="88"><span class="skill-name">C#</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">88%</span></div>
+                            <div class="skill-item" data-level="85"><span class="skill-name">SQL</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">85%</span></div>
+                            <div class="skill-item" data-level="72"><span class="skill-name">Python</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">72%</span></div>
+                            <div class="skill-item" data-level="75"><span class="skill-name">JavaScript</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">75%</span></div>
+                            <div class="skill-item" data-level="78"><span class="skill-name">C</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">78%</span></div>
+                            <div class="skill-item" data-level="70"><span class="skill-name">C++</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">70%</span></div>
+                            <div class="skill-item" data-level="65"><span class="skill-name">PHP</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">65%</span></div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-server" aria-hidden="true"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-item" data-level="85"><span class="skill-name">ASP.NET Core MVC</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">85%</span></div>
+                            <div class="skill-item" data-level="80"><span class="skill-name">Entity Framework Core</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">80%</span></div>
+                            <div class="skill-item" data-level="82"><span class="skill-name">Dapper ORM</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">82%</span></div>
+                            <div class="skill-item" data-level="85"><span class="skill-name">LINQ</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">85%</span></div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-paintbrush" aria-hidden="true"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-item" data-level="85"><span class="skill-name">HTML</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">85%</span></div>
+                            <div class="skill-item" data-level="80"><span class="skill-name">CSS</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">80%</span></div>
+                            <div class="skill-item" data-level="82"><span class="skill-name">Bootstrap</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">82%</span></div>
+                            <div class="skill-item" data-level="75"><span class="skill-name">JavaScript</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">75%</span></div>
+                            <div class="skill-item" data-level="72"><span class="skill-name">jQuery</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">72%</span></div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-database" aria-hidden="true"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-item" data-level="85"><span class="skill-name">SQL Server</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">85%</span></div>
+                            <div class="skill-item" data-level="70"><span class="skill-name">MySQL</span><div class="skill-bar"><span class="skill-fill"></span></div><span class="skill-percent">70%</span></div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-toolbox" aria-hidden="true"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</span>
+                            <span class="skill-tag"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</span>
+                            <span class="skill-tag"><i class="fa-solid fa-code" aria-hidden="true"></i> Visual Studio</span>
+                            <span class="skill-tag"><i class="fa-solid fa-terminal" aria-hidden="true"></i> VS Code</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section experience" id="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <header class="section-header fade-in">
+                    <span class="section-tag">Work Experience</span>
+                    <h2 id="experience-heading" class="section-title">My Journey</h2>
+                </header>
+
+                <div class="timeline">
+                    <article class="timeline-item fade-in">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="glass-card timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">.NET Development Intern</h3>
+                                    <p class="timeline-company">Logi Tech</p>
+                                </div>
+                                <span class="timeline-date">2025 — Present</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Gaining practical industry experience building and maintaining backend applications using ASP.NET Core MVC. Working with SQL Server databases, Entity Framework Core, and Dapper for data access while collaborating with the development team through Git.
+                            </p>
+                            <ul class="timeline-highlights" role="list">
+                                <li>Developed and maintained ASP.NET Core MVC web applications</li>
+                                <li>Worked with SQL Server for database design and queries</li>
+                                <li>Used Entity Framework Core and Dapper ORM for data access</li>
+                                <li>Collaborated using Git and GitHub for version control</li>
+                                <li>Identified and resolved bugs in existing backend modules</li>
+                                <li>Contributed to backend API and business logic development</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>ASP.NET Core MVC</span>
+                                <span>SQL Server</span>
+                                <span>Entity Framework Core</span>
+                                <span>Dapper</span>
+                                <span>Git</span>
+                            </div>
+                            <a href="https://github.com/bidushi01/logi-tech-experience" class="timeline-link" target="_blank" rel="noopener noreferrer" aria-label="View Logi Tech experience documentation on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> Experience Reference
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item fade-in">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="glass-card timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">BSc CSIT — Final Year</h3>
+                                    <p class="timeline-company">New Summit College, Kathmandu</p>
+                                </div>
+                                <span class="timeline-date">2023 — Present</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Pursuing a Bachelor's in Computer Science & Information Technology with focus on software engineering, database systems, web development, and data analytics.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section projects" id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <header class="section-header fade-in">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                </header>
+
+                <div class="projects-grid">
+                    <article class="project-card fade-in">
+                        <div class="project-image">
+                            <img src="peerassist.png" alt="Peer Assist — peer-to-peer learning platform screenshot" width="400" height="180" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Peer Assist</h3>
+                            <p class="project-desc">
+                                A peer-to-peer learning platform connecting help seekers with skilled helpers. Features real-time chat via SignalR, skill-based matching with a Weighted Sum Model, admin dashboard, and recruiter views for top performers.
+                            </p>
+                            <ul class="project-tech" role="list">
+                                <li>ASP.NET Core MVC</li>
+                                <li>SQL Server</li>
+                                <li>Dapper</li>
+                                <li>SignalR</li>
+                                <li>Bootstrap 5</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/bidushi01/finalyearproject" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View Peer Assist on GitHub">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card fade-in">
+                        <div class="project-image">
+                            <img src="chotojob.png" alt="Choto Job — local job platform screenshot" width="400" height="180" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Choto Job</h3>
+                            <p class="project-desc">
+                                A local e-governance platform connecting job posters with workers for short-term jobs. Includes NID verification, municipality admin approval, role-based access, and a mutual rating system for trust building.
+                            </p>
+                            <ul class="project-tech" role="list">
+                                <li>ASP.NET Core MVC</li>
+                                <li>SQL Server</li>
+                                 <li>Entity Framework</li>
+                                <li>C#</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                                
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/bidushi01/chotojob" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View Choto Job on GitHub">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card fade-in">
+                        <div class="project-image">
+                            <img src="billingsystem.png" alt="Billing System — invoice management application" width="400" height="180" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Billing System</h3>
+                            <p class="project-desc">
+                                An invoice management system for creating bills with multiple products, automatic VAT/discount calculations, product CRUD operations, and searchable invoice history using Dapper and SQL Server.
+                            </p>
+                            <ul class="project-tech" role="list">
+                                <li>ASP.NET Core MVC</li>
+                                <li>Dapper</li>
+                                <li>SQL Server</li>
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/bidushi01/BillingSystem" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View Billing System on GitHub">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card fade-in">
+                        <div class="project-image">
+                            <img src="employeedapper.png" alt="Employee Assignment System — service booking platform screenshot" width="400" height="180" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Employee Assignment System</h3>
+                            <p class="project-desc">
+                                Employee service management app for handling employees, services, appointments, and time slots. Features dashboard analytics, service assignment, and appointment booking with stored procedures.
+                            </p>
+                            <ul class="project-tech" role="list">
+                                <li>ASP.NET Core MVC</li>
+                                <li>Dapper</li>
+                                <li>SQL Server</li>
+                                <li>Bootstrap 5</li>
+                                <li>Stored Procedures</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/bidushi01/EMPLOYEEDAPPERMVC" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View Employee Assignment System on GitHub">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <header class="section-header fade-in">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 id="contact-heading" class="section-title">Contact Me</h2>
+                </header>
+
+                <div class="contact-grid">
+                    <div class="contact-info fade-in">
+                        <p class="contact-intro">
+                            I'm open to internship and junior developer opportunities in .NET, backend development, data analytics, and QA. Feel free to reach out — I'd love to connect!
+                        </p>
+
+                        <ul class="contact-cards" role="list">
+                            <li class="glass-card contact-card">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:gautambidushi4@gmail.com">gautambidushi4@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="glass-card contact-card">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/bidushi-gautam-64826a371/" target="_blank" rel="noopener noreferrer">bidushi-gautam</a>
+                                </div>
+                            </li>
+                            <li class="glass-card contact-card">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <div>
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com/bidushi01" target="_blank" rel="noopener noreferrer">bidushi01</a>
+                                </div>
+                            </li>
+                            <li class="glass-card contact-card">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span>Kathmandu, Nepal</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="resume.pdf" class="btn btn-primary contact-resume" target="_blank" rel="noopener noreferrer" download="Bidushi_Gautam_Resume.pdf" aria-label="View and download resume PDF">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <form class="glass-card contact-form fade-in" action="https://formspree.io/f/mrbondvy" method="POST" aria-label="Contact form">
+                        <h3 class="form-title">Send a Message</h3>
+                        <div class="form-group">
+                            <label for="name" class="visually-hidden">Full Name</label>
+                            <input type="text" id="name" name="Full Name" placeholder="Full Name *" required autocomplete="name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="visually-hidden">Email</label>
+                                <input type="email" id="email" name="Email" placeholder="Email *" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="visually-hidden">Phone</label>
+                                <input type="tel" id="phone" name="Phone" placeholder="Phone Number" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="visually-hidden">Subject</label>
+                            <input type="text" id="subject" name="Subject" placeholder="Subject *" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea id="message" name="Message" placeholder="Your message *" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Bidushi Gautam. All rights reserved.</p>
+            <p class="footer-built">Built with HTML, CSS &amp; JavaScript</p>
         </div>
-        <div class="nav-toggler"></div>
-        <span></span>
-        <ul class ="nav">
-            <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#about" ><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#resume" ><i class="fa fa-file-alt"></i>Resume</a></li>
-            <li><a href="#contact" ><i class="fa fa-comments"></i>Contact</a></li>
-            <li><a href="#message"><i class="fa fa-comment-dots"></i>Message me</a></li>
-        </ul>
-        <div class="theme-switcher">
-            <h4>Theme Colors</h4>
-            <div class="theme-options">
-                <span class="theme-option" data-theme="color-1" style="background-color: bisque;"></span>
-                <span class="theme-option" data-theme="color-2" style="background-color: black;"></span>
-                <span class="theme-option" data-theme="color-3" style="background-color:pink;"></span>
-                <span class="theme-option" data-theme="color-4" style="background-color: lightgoldenrodyellow;"></span>
-                <span class="theme-option" data-theme="color-5" style="background-color: slategrey;"></span>
-            </div>
-        </div>
-    </div>
-    <!---aside end-->
-    <!----main content start--->
-    <div class="main-content">
-    <!----home section start-->
-    <section class="home section" id="home">
-        <div class="container">
-        <div class="row">
-            <div class="home-info padd-15">
-                <h3 class="hello">Hello,</h3>
-                <p> It's <span class="name">Bidushi Gautam</span></h3>
-                <h3 class="my-profession"><span class="typing">Student</span></h3>
-                <p>I’m a dedicated and enthusiastic BSc. CSIT student currently in my 6th semester at New Summit College, Kathmandu. Passionate about web development, I specialize in HTML, CSS, JavaScript, PHP, and Python. I love building clean, responsive websites and dynamic web applications that solve real-world problems.</p>
-                <a href="#contact" class="btn hire-me">Hire me</a>
-                
-                <div class="social-links">
-                    <a href="https://www.instagram.com/bidushi_gautam/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/areum.gal" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://github.com/bidushi01" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/bidushi-gautam-64826a371/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
+    </footer>
 
-            </div>
-            <div class="home-img padd-15">
-                <img src="profile.jpg">
-            </div>
-        </div></div>
-    </section>
- 
-    <section class="about section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
-                    <h2>About</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="about-content padd-15">
-                    
-                    <div class="row">
-                        <div class="section-title padd-15">
-                    <h2>About me</h2>
-                </div>
-                        <div class="about-text padd-15">   
-                            <p>I've always been interested in how things work on the web and how design can make something both useful and beautiful. As a CSIT student, I've been learning how to bring those ideas to life through front-end development. I enjoy creating websites that are clean, simple, and easy to use. Outside of tech, I love exploring new places and learning about different cultures. These experiences help me see things in new ways and inspire how I build and design.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="Skills padd-15">
-                            <h3>My Skills</h3>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <p>HTML</p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-progress" style="width: 65%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <p>CSS</p>
-                                    <p class="percent">70%</p>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-progress" style="width: 70%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <p>Java Script</p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-progress" style="width: 65%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <p>PHP</p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-progress" style="width: 65%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <p>Python</p>
-                                    <p class="percent">75%</p>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-progress" style="width: 75%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <p>C</p>
-                                    <p class="percent">80%</p>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-progress" style="width: 80%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <p>C++</p>
-                                    <p class="percent">70%</p>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-progress" style="width: 70%"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="personal-info padd-15">
-                            <div class="row">
-                                <div class="info-item padd-15">
-                                    <p>Birthday: <span> 9 oct 2004</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Age: <span>21</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p> Language : <span> Nepali,English,Hindi</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p> Email: <span>gautambidushi4@gmail.com</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p> Phone: <span>9866836520</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p> City: <span>Kathmandu</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p> Education: <span>Bachelor in CSIT</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p> College: <span>New Summit College, Shantinagar</span></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="buttons padd-15">
-                                    <a href="https://raw.githubusercontent.com/bidushi01/resume-bidushi/main/resume.pdf" class="btn download-cv" target="_blank" rel="noopener">Download CV</a>
-                                    <a href="#contact" class="btn hire-me">Hire me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---About section end--->
-    
-    <!---Resume section start--->
-    <section class="resume section" id="resume">
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
-                    <h1>Resume</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="resume-content padd-15">
-                    <div class="resume-section">
-                        <h2>Education</h2>
-                        <div class="resume-item">
-                            <div class="resume-header">
-                                <h4>Higher Level Education</h4>
-                                <span class="year">2020–2022</span>
-                            </div>
-                            <p class="institution">Kathmandu Model College</p>
-                            <p class="description">Completed higher level education with a focus on Science.</p>
-                        </div>
-                        <div class="resume-item">
-                            <div class="resume-header">
-                                <h4>Bachelor in Computer Science & Information Technology (CSIT)</h4>
-                                <span class="year">2023 - Present</span>
-                            </div>
-                            <p class="institution">New Summit College, Shantinagar, Kathmandu</p>
-                            <p class="description">Currently pursuing my degree with focus on web development, programming, and software engineering.</p>
-                        </div>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Skills</h3>
-                        <p>HTML, CSS, JavaScript, PHP, Python, C, C++, Git, VS Code</p>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Projects</h3>
-                        <div class="resume-item">
-                            <div class="resume-header">
-                                <h4>Personal Portfolio Website</h4>
-                                <span class="year">2024</span>
-                            </div>
-                            <p class="description">Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript. Features include theme switching, smooth scrolling, and interactive elements.</p>
-                        </div>
-                        <div class="resume-item">
-                            <div class="resume-header">
-                                <h4>Web Development Projects</h4>
-                                <span class="year">2023 - 2024</span>
-                            </div>
-                            <p class="description">Created various web applications and websites as part of academic projects and personal learning.</p>
-                        </div>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Certificates</h3>
-                        <div class="resume-item">
-                            <div class="resume-header">
-                                <h4>Python Bootcamp Certificate</h4>
-                                <span class="year">Jul 2023</span>
-                            </div>
-                            <p class="institution">Python Users Group Nepal</p>
-                            <p class="description">Completed comprehensive Python programming bootcamp covering core concepts, data structures, and practical applications.</p>
-                        </div>
-                        <div class="resume-item">
-                            <div class="resume-header">
-                                <h4>TechTrix 2023 - Organizer & Core Team Member</h4>
-                                <span class="year">2023</span>
-                            </div>
-                            <p class="institution">TechTrix</p>
-                            <p class="description">Served as an organizer and core team member for TechTrix 2023, contributing to the planning and execution of this technology event.</p>
-                        </div>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Languages</h3>
-                        <p>Nepali (Native), English (Fluent), Hindi (Conversational)</p>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Interests</h3>
-                        <p>Web Development, Programming, Travel, Learning New Technologies</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---Resume section end--->
-    
-    <!---Contact section start--->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
-                    <h1>Contact Me</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="contact-content padd-15">
-                    <h3>Get In Touch</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <p><i class="fa fa-envelope"></i> Email: gautambidushi4@gmail.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <p><i class="fa fa-phone"></i> Phone: 9866836520</p>
-                        </div>
-                        <div class="contact-item">
-                            <p><i class="fa fa-map-marker"></i> Location: Kathmandu, Nepal</p>
-                        </div>
-                        <div class="contact-item">
-                            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/bidushi_gautam/" target="_blank">bidushi_gautam</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/areum.gal" target="_blank">bidushi gautam</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/bidushi01" target="_blank">bidushi01</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/bidushi-gautam-64826a371/" target="_blank">bidushi gautam</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---Contact section end--->
-
-<!---Message Me section start-->
-<section class="message section" id="message">
-  <div class="container">
-    <div class="row">
-      <div class="section-title padd-15">
-        <h1>Message Me</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="message-content padd-15">
-        <h3>Have a Question? </h3>
-        <form class="contact-form" action="https://formspree.io/f/mrbondvy" method="POST">
- <form class="contact-form" action="https://formspree.io/f/mrbondvy" method="POST">
-  <div class="form-group">
-    <input type="text" name="Full Name" placeholder="Full Name *" required>
-  </div>
-
-  <div class="form-row">
-    <input type="email" name="Email" placeholder="Email *" required>
-    <input type="text" name="Phone" placeholder="Phone Number">
-  </div>
-
-  <div class="form-group">
-    <input type="text" name="Subject" placeholder="Subject *" required>
-  </div>
-
-  <div class="form-group">
-    <textarea name="Message" placeholder="Message *" required></textarea>
-  </div>
-
-  <!-- Redirect to a thank-you page after submission -->
-  <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
-
-  <button type="submit" class="btn send-message">Send Message</button>
-</form>
-
-
-      </div>
-    </div>
-  </div>
-</section>
-<!---Message Me section end-->
-    </div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
